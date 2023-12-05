@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Post Management App</title>
+</head>
+<body>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <form id="post-form">
+        <label for="userId">User ID:</label>
+        <input type="number" id="userId" name="userId" min="1" max="10" required>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="body">Body:</label>
+        <textarea id="body" name="body" required></textarea>
+        <button type="button" onclick="savePost()">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="posts" class="posts-container"></div>
+
+  <button id="create-post-button" class="create-post-button" onclick="openModal()">Create Post</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

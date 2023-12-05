@@ -1,0 +1,112 @@
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffd699; /* Персиковый */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .modal-content {
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: auto;
+    right: 1px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ff3300; /* Красный */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  #posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .post {
+    background-color: #ccffcc; /* Светло-зеленый */
+    border: 1px solid #4d944d; /* Темно-зеленый */
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .post:hover {
+    transform: scale(1.05);
+  }
+  
+  .create-post-button {
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #1a75ff; /* Синий */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .create-post-button:hover {
+    background-color: #0052cc; /* Темно-синий */
+  }
+  
+  button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  #modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  .repeat-modal-window__close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  textarea {
+    width: 500px;
+    height: 150px;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    background-color: #808080; /* Серый */
+}
+  
